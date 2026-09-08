@@ -1,0 +1,60 @@
+:host {
+  --nav-height: 4rem;
+  display: block;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-rows: var(--nav-height) auto 1fr;
+  height: 100%;
+  background: #f5f7fa;
+}
+
+.global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: #1f2937;
+  color: #fff;
+  z-index: 10;
+}
+
+.global-nav button {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  background: #fff;
+  color: #1f2937;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+
+.nav-spacer {
+  height: var(--nav-height);
+}
+
+.notification-banner {
+  padding: 0.75rem 1rem;
+  background: #fff3cd;
+  border-bottom: 1px solid #f0df9c;
+}
+
+.workspace {
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+
+.workspace-view {
+  min-height: 0;
+  padding: 1rem;
+  overflow: hidden;
+}

@@ -1,0 +1,12 @@
+<nav class="tab-menu" aria-label="Primary tabs">
+  @for (tab of model(); track tab.routerLink) {
+    <a
+      class="tab-menu__item"
+      [routerLink]="tab.routerLink"
+      routerLinkActive="tab-menu__item--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      {{ tab.label }}
+    </a>
+  }
+</nav>

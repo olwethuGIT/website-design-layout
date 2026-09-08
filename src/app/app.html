@@ -1,0 +1,23 @@
+<div class="app-shell">
+  <header class="global-nav">
+    <strong>Website Design Layout</strong>
+    <button type="button" (click)="toggleNotification()">
+      {{ showNotification() ? 'Hide' : 'Show' }} notification
+    </button>
+  </header>
+
+  <div class="nav-spacer" aria-hidden="true"></div>
+
+  @if (showNotification()) {
+    <section class="notification-banner" role="status">
+      Notifications area (optional)
+    </section>
+  }
+
+  <main class="workspace">
+    <p-tabmenu [model]="tabs"></p-tabmenu>
+    <section class="workspace-view">
+      <router-outlet />
+    </section>
+  </main>
+</div>

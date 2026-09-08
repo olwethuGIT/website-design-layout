@@ -1,0 +1,20 @@
+.tab-menu {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #dce3eb;
+  background: #fff;
+}
+
+.tab-menu__item {
+  text-decoration: none;
+  color: #334155;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.4rem;
+}
+
+.tab-menu__item--active {
+  color: #0f172a;
+  background: #e2e8f0;
+  font-weight: 600;
+}
