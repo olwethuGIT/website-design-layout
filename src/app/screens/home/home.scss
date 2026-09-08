@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.screen {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid #dce3eb;
+}
+
+.screen-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #dce3eb;
+  background: #f8fafc;
+  font-weight: 600;
+}
+
+.screen-body {
+  overflow: auto;
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
